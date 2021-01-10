@@ -20,4 +20,9 @@ $ curl -X POST -d '{"price":200, "description":"TOP-room"}'  http://localhost:90
 <br>
 DELETE  Запрос на удаление номера и всех его броней
 $ curl -X DELETE  http://localhost:9000/room/119
+<br>
+GET  Запрос на получение списка номеров отеля, где параметр date - сортировка по дате, price - сортировка по цене, direction - направление сортировки
+$ curl -X GET  http://localhost:9000/room?date=false&price=true&direction=false
+<br>
+<br>
 
