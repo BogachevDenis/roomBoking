@@ -15,4 +15,9 @@ $ docker-compose up
 <br>
 Запросы к API через curl:
 <br>
-$ curl -X POST http://localhost:8080/create -d '{"email": "test@test.ru","url":"https://www.avito.ru/ad"}'
+POST Запрос на добавление нового номера
+$ curl -X POST -d '{"price":200, "description":"TOP-room"}'  http://localhost:9000/room/add
+<br>
+DELETE  Запрос на удаление номера и всех его броней
+$ curl -X DELETE  http://localhost:9000/room/119
+
