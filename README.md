@@ -25,4 +25,12 @@ GET  Запрос на получение списка номеров отеля
 $ curl -X GET  http://localhost:9000/room?date=false&price=true&direction=false
 <br>
 <br>
+POST Запрос на добавление новой брони
+$ curl -X POST -d '{"roomid":6, "startdate":"2021-12-25", "finishdate":"2022-11-11"}'  http://localhost:9000/booking/add
+<br>
+DELETE  Запрос на удаление брони
+$ curl -X DELETE  http://localhost:9000/booking/68
+<br>
+GET  Запрос на получение списка броней, где параметр roomid - id номера
+$ curl -X GET  http://localhost:9000/booking?roomid=6
 
