@@ -23,6 +23,10 @@ func (r RoomWorker) DeleteRoom(roomId int) error {
 	if err != nil {
 		return err
 	}
+	_, err = db.Exec(`DELETE FROM booking WHERE roomid =$1`, roomId)
+	if err != nil {
+		return err
+	}
 	return  nil
 }
 
