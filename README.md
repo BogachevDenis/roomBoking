@@ -40,6 +40,8 @@ $ curl -X DELETE  http://localhost:9000/booking/68
 <br>
 $ curl -X GET  http://localhost:9000/booking?roomid=6
  <br>
+
 # Запуск тестов
-  $ cd pkg/handlers/
+$ cd pkg/handlers/
+<br>
 $ go test
