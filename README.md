@@ -39,4 +39,7 @@ $ curl -X DELETE  http://localhost:9000/booking/68
 <li>GET  Запрос на получение списка броней, где параметр roomid - id номера
 <br>
 $ curl -X GET  http://localhost:9000/booking?roomid=6
-
+ <br>
+# Запуск тестов
+  $ cd pkg/handlers/
+$ go test
